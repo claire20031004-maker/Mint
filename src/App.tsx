@@ -430,9 +430,6 @@ function BottomNav({
         </button>
 
       </div>
-      
-      {/* iOS Home Indicator */}
-      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-black/20 rounded-full"></div>
     </div>
   );
 }
@@ -449,9 +446,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#D4F8FB] to-[#BEEFF2] flex items-center justify-center p-4 sm:p-8 font-sans">
-      {/* Mobile Device Mockup Container for Desktop View */}
-      <div className="w-full max-w-[390px] h-[100dvh] sm:h-[844px] bg-[#EAFDFD] relative overflow-hidden flex flex-col sm:rounded-[55px] sm:border-[12px] border-black sm:shadow-2xl">
+    <div className="min-h-[100dvh] w-full bg-[#EAFDFD] flex items-center justify-center font-sans">
+      <div className="w-full max-w-md h-[100dvh] relative overflow-hidden flex flex-col">
         
         {currentPage === 'home' && (
           <>
